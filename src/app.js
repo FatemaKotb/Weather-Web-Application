@@ -63,8 +63,7 @@ app.get('/weather', (req, res) => {
             }
 
             res.send({
-                location,
-                forecast: `The temperature is ${temperature}°C but it feels like ${feels_like}°C due to a humidity of ${humidity}%.`
+                forecast: `In ${location} the temperature is ${temperature}°C but it feels like ${feels_like}°C due to a humidity of ${humidity}%.`
             })
         })
     })
